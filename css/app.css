@@ -32,6 +32,15 @@ body {
     border-radius: 50%;
 }
 
+.img-cropcard {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
 .img-crop>img {
     display: inline;
     margin: 0 auto;
@@ -136,19 +145,20 @@ footer {
 }
 
 .bg-theme-light {
-    background-color: var(--bs-gray-100);
+    background-color: #fde2cb;
 }
 
 .bg-theme-dark {
-    background-color: var(--bs-gray-800);
+    background-color: #fde2cb;
+    /* background-color: var(--bs-gray-800); */
 }
 
 .color-theme-white {
-    color: white;
+    color: #fde2cb;
 }
 
 .color-theme-black {
-    color: black;
+    color: #fde2cb;
 }
 
 .bg-cover-black {

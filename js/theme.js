@@ -58,12 +58,12 @@ export const theme = (() => {
         elements.forEach((element) => {
             if (element.classList.contains('text-dark')) {
                 element.classList.remove('text-dark');
-                element.classList.add('text-light');
+                element.classList.add('text-dark'); //text-light
             }
 
             if (element.classList.contains('btn-theme-dark')) {
                 element.classList.remove('btn-theme-dark');
-                element.classList.add('btn-theme-light');
+                element.classList.add('btn-theme-dark'); //btn-theme-light
             }
 
             if (element.classList.contains('bg-light')) {
@@ -78,7 +78,7 @@ export const theme = (() => {
 
             if (element.classList.contains('bg-theme-light')) {
                 element.classList.remove('bg-theme-light');
-                element.classList.add('bg-theme-dark');
+                element.classList.add('bg-theme-light'); //bg-theme-dark
             }
 
             if (element.classList.contains('color-theme-white')) {
@@ -129,6 +129,7 @@ export const theme = (() => {
             }
         }
 
+       
         if (isDarkMode()) {
             onDark();
             document.documentElement.setAttribute(THEME_BS_DATA, THEME_DARK);
