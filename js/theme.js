@@ -109,26 +109,29 @@ export const theme = (() => {
     };
 
     const change = () => {
-        if (isDarkMode()) {
-            onLight();
-            document.documentElement.setAttribute(THEME_BS_DATA, THEME_LIGHT);
-            theme.set('active', THEME_LIGHT);
-        } else {
-            onDark();
+        onDark();
             document.documentElement.setAttribute(THEME_BS_DATA, THEME_DARK);
             theme.set('active', THEME_DARK);
-        }
+        // if (isDarkMode()) {
+        //     onLight();
+        //     document.documentElement.setAttribute(THEME_BS_DATA, THEME_LIGHT);
+        //     theme.set('active', THEME_LIGHT);
+        // } else {
+        //     onDark();
+        //     document.documentElement.setAttribute(THEME_BS_DATA, THEME_DARK);
+        //     theme.set('active', THEME_DARK);
+        // }
     };
 
     const check = () => {
-        if (!theme.has('active')) {
-            theme.set('active', THEME_LIGHT);
+        //if (!theme.has('active')) {
+            //theme.set('active', THEME_LIGHT);
 
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                theme.set('active', THEME_DARK);
-            }
-        }
-
+            //if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                //theme.set('active', THEME_DARK);
+            //}
+        //}
+        theme.set('active', THEME_DARK);
        
         if (isDarkMode()) {
             onDark();
