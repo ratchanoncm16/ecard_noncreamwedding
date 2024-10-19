@@ -57,7 +57,18 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap"> 
+
+    <!-- non custum font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+
+
 
     <!-- Dependencies CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous">
@@ -68,10 +79,10 @@
 </head>
 
 <!-- If not using comments, you can remove the data-key and data-url attributes -->
-<body data-key="bfb9cfea33ab7ae21a315fbd6f065a815d3e20ff2f007aa2ca" data-url="https://api.ulems.my.id/" style="overflow-y: hidden;">
+<body data-key="bfb9cfea33ab7ae21a315fbd6f065a815d3e20ff2f007aa2ca" data-url="https://api.ulems.my.id/" style="overflow-y: hidden;" onload="btn_open_click()">
 
     <!-- Navbar Bottom -->
-    <nav class="navbar bg-dark navbar-expand fixed-bottom rounded-top-4 p-0" id="navbar-menu">
+    <nav class="navbar bg-dark navbar-expand fixed-bottom rounded-top-4 p-0" style="font-family: Itim, cursive;" id="navbar-menu">
         <ul class="navbar-nav nav-justified w-100 align-items-center">
             <li class="nav-item">
                 <a class="nav-link" href="#home">
@@ -113,18 +124,18 @@
         <section id="home" class="p-0 m-0" style="background-image: url('./assets/images/KAN0378.jpg'); background-size: cover; background-position: center;">
             <div class="text-center pt-4 pb-0 px-0 m-0 bg-cover-black">
 
-                <h1 class="font-esthetic my-4 fw-medium" style="font-size: 2.5rem;">การ์ดเชิญงานแต่งงาน</h1>
+                <!-- <h1 class=" my-4 fw-medium" style="font-size: 2.5rem; font-family:Itim, cursive">การ์ดเชิญงานแต่งงานครีมนนท์</h1> -->
 
                 <div class="py-4">
                     <div class="img-crop border border-3 border-light shadow mx-auto">
                         <img src="./assets/images/nc2.jpg" alt="bg" onclick="util.modal(this)">
                     </div>
                 </div>
+                <!-- <h2 class="font-esthetic my-4" style="font-size: 3rem;">Sasitorn &amp; Ratchanon</h2> -->
+                <h2 class=" my-4" style="font-size: 3rem; font-family: Charm, cursive; color: white;">Sasitorn &amp; Ratchanon</h2>
+                <p class="mb-0" style="font-size: 1.5rem; font-family: Charm, cursive; color: white;">Saturday,11 January 2025</p>
 
-                <h2 class="font-esthetic my-4" style="font-size: 3rem;">Sasitorn &amp; Ratchanon</h2>
-                <p class="mb-0" style="font-size: 1.5rem;">Saturday,11 January 2025</p>
-
-                <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.google.com/calendar/u/0/r/eventedit?text=The+Wedding+of+Sasitorn+and+Ratchanon&details=The+Wedding+of+Sasitorn+and+Ratchanon+%7C+11+January+2025+%7C+ณ+บ้านหนองบัวใหญ่+ตำบลหนองบัวใหญ่+อำเภอจัตุรัส+จังหวัดชัยภูมิ+36130.+%7C+08.00+-+11.00+น.&dates=20250111T100000/20250111T110000&location=https://maps.app.goo.gl/uNbhNFFUjYCpKmaM6">
+                <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" style="font-family:Itim, cursive;" target="_blank" href="https://calendar.google.com/calendar/u/0/r/eventedit?text=The+Wedding+of+Sasitorn+and+Ratchanon&details=The+Wedding+of+Sasitorn+and+Ratchanon+%7C+11+January+2025+%7C+ณ+บ้านหนองบัวใหญ่+ตำบลหนองบัวใหญ่+อำเภอจัตุรัส+จังหวัดชัยภูมิ+36130.+%7C+08.00+-+11.00+น.&dates=20250111T100000/20250111T110000&location=https://maps.app.goo.gl/uNbhNFFUjYCpKmaM6">
                     <i class="fa-solid fa-calendar-check me-2"></i>วันที่
                 </a>
 
@@ -134,7 +145,7 @@
                     </div>
                 </div>
 
-                <p class="m-0 p-0">เลื่อนลง</p>
+                <p class="m-0 p-0" style="font-family:Itim, cursive;">เลื่อนลง</p>
             </div>
         </section>
 
@@ -144,15 +155,32 @@
         </svg>
 
         <!-- Bride -->
-        <section class="dark-section bg-black" id="bride">
+        <section class="dark-section " style="background-color: #fde2cb" id="bride">
 
             <div class="text-center">
-                <p class="pb-3 px-3">เราขอใช้การ์ดออนไลน์นี้เป็นอีกหนึ่งช่องทางการเรียนเชิญทุกท่าน ขอส่งต่อความรัก ที่ไม่ได้น้อยไปกว่าเดิม</p>
 
-                <p class="pb-3 px-3">(ขออภัยหากมิได้เรียนเชิญด้วยตัวเอง)</p>
+                <div class="overflow-x-hidden">
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class=" border border-3 border-light shadow my-4 mx-auto" style="width: 15rem;
+                        height: 20rem;
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 0%;">
+                            <img src="./assets/images/card.png" width="250" height="400" alt="card" onclick="util.modal(this)" >
+                        </div>
+                       
+                    </div>
+                </div>
+
+                
+                <p class="pb-3 px-3" style="font-family:Itim, cursive;color: black;">เราขอใช้การ์ดออนไลน์นี้เป็นอีกหนึ่งช่องทางการเรียนเชิญทุกท่าน ขอส่งต่อความรัก ที่ไม่ได้น้อยไปกว่าเดิม</p>
+
+                <p class="pb-3 px-3" style="font-family:Itim, cursive;color: black;">(ขออภัยหากมิได้เรียนเชิญด้วยตัวเอง)</p>
 
 
-                <h2 class="font-arabic py-4 px-2" style="font-size: 2rem">มีความยินดีขอเรียนเชิญเพื่อเป็นเกียรติในงานเลี้ยงฉลอง</h2>
+                <!-- <h2 class="font-arabic py-4 px-2" style="font-size: 2rem;font-family:Itim, cursive;">มีความยินดีขอเรียนเชิญเพื่อเป็นเกียรติในงานเลี้ยงฉลอง</h2> -->
+                
+
 
                 <!-- Love animation -->
                 <div class="position-relative">
@@ -163,7 +191,9 @@
                     </div>
                 </div>
 
-                <h2 class="font-esthetic py-4 px-2" style="font-size: 2rem">เนื่องในพิธีมงคลสมรส ระหว่าง</h2>
+
+               
+                <!-- <h2 class="font-esthetic py-4 px-2" style="font-size: 2rem">เนื่องในพิธีมงคลสมรส ระหว่าง</h2> -->
                 <!-- <h2 class="font-esthetic py-4 px-2" style="font-size: 2rem">Assalamualaikum Warahmatullahi Wabarakatuh</h2> -->
                
                 
@@ -182,9 +212,9 @@
                         <div class="img-crop border border-3 border-light shadow my-4 mx-auto">
                             <img src="./assets/images/cream1.jpg" alt="cewe" onclick="util.modal(this)">
                         </div>
-                        <h2 class="font-esthetic" style="font-size: 3rem;">Sasitorn Piromkit</h2>
-                        <p class="mt-3 mb-0" style="font-size: 1.25rem;">ลูกสาว</p>
-                        <p class="mb-0">พ่อ ... &amp; แม่ ...</p>
+                        <h2  style="font-size: 3rem;font-family: Charm, cursive;color: black;">Sasitorn Piromkit (Cream)</h2>
+                        <!-- <p class="mt-3 mb-0" style="font-size: 1.25rem;">ลูกสาว</p> -->
+                        <!-- <p class="mb-0">พ่อ ... &amp; แม่ ...</p> -->
                     </div>
                     
 
@@ -197,7 +227,7 @@
                         </div>
                     </div>
 
-                    <h2 class="font-esthetic my-4" style="font-size: 4rem;">&</h2>
+                    <h2 class=" my-4" style="font-size: 4rem;font-family: Charm, cursive;color: black;">&</h2>
 
                     <!-- Love animation -->
                     <div class="position-relative">
@@ -212,9 +242,9 @@
                         <div class="img-crop border border-3 border-light shadow my-4 mx-auto">
                             <img src="./assets/images/non1.jpg" alt="cowo" onclick="util.modal(this)">
                         </div>
-                        <h2 class="font-esthetic" style="font-size: 3rem;">Ratchanon Khuekhunthod</h2>
-                        <p class="mt-3 mb-0" style="font-size: 1.25rem;">ลูกชาย</p>
-                        <p class="mb-0">พ่อ ... &amp; แม่ ...</p>
+                        <h2 style="font-size: 3rem;font-family: Charm, cursive;color: black;">Ratchanon Khuekhunthod (Non)</h2>
+                        <!-- <p class="mt-3 mb-0" style="font-size: 1.25rem;">ลูกชาย</p>
+                        <p class="mb-0">พ่อ ... &amp; แม่ ...</p> -->
                     </div>
                 </div>
 
@@ -267,14 +297,14 @@
         </svg> -->
 
         <!-- Wedding Date -->
-        <section class="dark-section bg-black" id="wedding-date">
+        <section class="dark-section " style="background-color: #fde2cb; color:black;" id="wedding-date">
 
             <div class="container">
                 <div class="text-center">
 
-                    <h2 class="font-esthetic py-3" style="font-size: 2rem;">Waktu Menuju Acara</h2>
+                    <!-- <h2 class="font-esthetic py-3" style="font-size: 2rem;">Waktu Menuju Acara</h2> -->
 
-                    <div class="border rounded-pill shadow py-2 px-4 mx-2 mb-4">
+                    <div class="border rounded-pill shadow py-2 px-4 mx-2 mb-4" style="font-family: Itim, cursive;">
                         <!-- Ganti waktunya pada data-waktu (sesuai format tersebut) -->
                         <div class="row justify-content-center" data-time="2025-01-01 01:00:00" id="count-down">
                             <div class="col-3 p-1">
@@ -303,44 +333,35 @@
                         </div>
                     </div>
 
-                    <div class="overflow-x-hidden">
+                    <div class="overflow-x-hidden" style="font-family: Itim, cursive;">
                         <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
-                            <h2 class="font-esthetic" style="font-size: 2rem;">พิธีแห่ขันหมาก</h2>
+                            <h2 style="font-size: 2rem;">พิธีแห่ขันหมาก</h2>
                             <p>เริ่ม 08 : 09 น.</p>
                         </div>
 
                         <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                            <h2 class="font-esthetic" style="font-size: 2rem;">พิธีบายสีสู่ขวัญและผูกข้อมือ</h2>
+                            <h2  style="font-size: 2rem;">พิธีบายสีสู่ขวัญและผูกข้อมือ</h2>
                             <p>เริ่ม 09 : 09 น.</p>
                         </div>
 
                         <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                            <h2 class="font-esthetic" style="font-size: 2rem;">ร่วมรับประทานอาหาร</h2>
+                            <h2  style="font-size: 2rem;">ร่วมรับประทานอาหาร</h2>
                             <p>เริ่ม 10 : 00 น. เป็นต้นไป</p>
                         </div>
 
-                        <!-- <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                            <h2 class="font-esthetic" style="font-size: 2rem;">พิธีรดน้ำสังข์</h2>
-                            <p>เริ่ม 10 : 30 น.</p>
-                        </div> -->
-
-                        <!-- <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                            <h2 class="font-esthetic" style="font-size: 2rem;">ร่วมรับประทานอาหารเที่ยง</h2>
-                            <p>เริ่ม 11 : 00 น. เป็นต้นไป</p>
-                        </div> -->
                     </div>
 
-                    <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
-                        <a href="https://maps.app.goo.gl/m8RN9TPhATRqzZps6" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>ดู Google Maps</a>
+                    <div class="py-2" style="font-family: Itim, cursive;" data-aos="fade-up" data-aos-duration="1500">
+                        <a href="https://maps.app.goo.gl/m8RN9TPhATRqzZps6"  style="color:black" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>ดู Google Maps</a>
                         <p>ณ <b>บ้านหนองบัวใหญ่ ตำบล หนองบัวใหญ่ อำเภอจัตุรัส ชัยภูมิ 36130.</b></p>
 									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d960.8135362120291!2d101.8551672!3d15.5780645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311f25b8174a405d%3A0x3cde662a9a12b75c!2z4LiV4Liz4Lia4LilIOC4q-C4meC4reC4h-C4muC4seC4p-C5g-C4q-C4jeC5iCDguK3guLPguYDguKDguK3guIjguLHguJXguLjguKPguLHguKog4LiK4Lix4Lii4Lig4Li54Lih4Li0IDM2MTMw!5e0!3m2!1sth!2sth!4v1724226311715!5m2!1sth!2sth" 
                                     width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <!-- <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;">บ้านหนองบัวใหญ่ ตำบล หนองบัวใหญ่ อำเภอจัตุรัส ชัยภูมิ 36130.</p> -->
                     </div>
 
-                    <div class="container-pay">
-                        <h2>Bank Account Information</h2>
-                        <p>Account Number: 1234567890</p>
+                    <div class="container-pay" style="font-family: Itim, cursive;" data-aos="fade-up" data-aos-duration="1500">
+                        <!-- <h2>Bank Account Information</h2>
+                        <p>Account Number: 1234567890</p> -->
                         <div class="qr-code">
                             <h3>Scan to Pay</h3>
                             <img id="qrCode" src="assets/images/S__10952708.jpg" width="300" alt="QR Code">
@@ -354,6 +375,15 @@
                                 link.href = qrCode.src;
                                 link.download = 'qr_code.png';
                                 link.click();
+                            }
+
+                            function btn_open_click() {
+                                setTimeout(() => {
+                                    document.getElementById('btn_open').click();
+                                    
+                                }, 1500);
+                               
+                                
                             }
                         </script>
                     </div>
@@ -373,12 +403,12 @@
         </div>
 
         <!-- Gallery -->
-        <section class="dark-section bg-black" id="gallery">
+        <section class="dark-section " style="font-family: Itim, cursive; background-color: #fde2cb; color:black" id="gallery">
 
             <div class="container pb-5 pt-4">
                 <div class="card-body border rounded-5 shadow p-3">
 
-                    <h2 class="font-esthetic text-center py-3" data-aos="fade-down" data-aos-duration="1500" style="font-size: 2rem;">Galeri</h2>
+                    <h2 class=" text-center py-3" data-aos="fade-down" data-aos-duration="1500" style="font-size: 2rem;">Gallery</h2>
 
                     <div id="carousel-image-one" data-aos="fade-up" data-aos-duration="1500" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -451,108 +481,7 @@
             <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
         </svg>
 
-        <!-- Love Gift -->
-        <!-- <div class="container">
-            <div class="pb-2">
-
-                <div class="text-center">
-
-                    <h2 class="font-esthetic mt-0 mb-3" style="font-size: 3rem;">Love Gift</h2>
-
-                    <p class="mb-3" style="font-size: 0.9rem;">
-                        โดยไม่ลดทอนความเคารพ สำหรับผู้ที่ต้องการมอบสัญลักษณ์แห่งความรักให้กับเรา คุณสามารถทำได้ผ่าน:
-                    </p>
-
-                    <div class="overflow-x-hidden">
-                        <div class="row row-cols-2">
-
-                            <div class="col card-body border rounded-4 shadow p-3 mx-4 mt-2 mb-4" data-aos="fade-down" data-aos-duration="1500">
-                                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png" class="img-fluid w-50 rounded" alt="bni">
-
-                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
-                                <p class="card-text" style="font-size: 0.9rem;">a.n Lorem ipsum dolor</p>
-
-                               
-                                <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789" onclick="util.copy(this, 'Tersalin')">Salin No. Rekening</button>
-                            </div>
-
-                            <div class="col card-body border rounded-4 shadow p-3 mx-4 mt-2 mb-4" data-aos="fade-down" data-aos-duration="1500">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/640px-BANK_BRI_logo.svg.png" class="img-fluid w-50 rounded" alt="bri">
-
-                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
-                                <p class="card-text" style="font-size: 0.9rem;">a.n Lorem ipsum dolor</p>
-
-                                
-                                <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789" onclick="util.copy(this, 'Tersalin')">Salin No. Rekening</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Comment -->
-        <!-- <section class="m-0 px-0 pb-0 pt-2" id="comment">
-            <div class="container">
-
-                <div class="card-body border rounded-4 shadow p-3">
-                    <h2 class="font-esthetic text-center mb-3" style="font-size: 3rem;">การอธิษฐาน &amp; คำอวยพร</h2>
-
-                    <div class="mb-3">
-                        <label for="form-name" class="form-label">ชื่อ</label>
-                        <input type="text" class="form-control shadow-sm rounded-4" id="form-name" placeholder="Isikan Nama Anda">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="form-presence" class="form-label">ยืนยันตัวตน</label>
-                        <select class="form-select shadow-sm rounded-4" id="form-presence">
-                            <option value="0" selected>ไม่แน่นอน</option>
-                            <option value="1">ยืนยันที่จะไป</option>
-                            <option value="2">ไม่ไป</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="form-comment" class="form-label">การอธิษฐาน &amp; คำอวยพร</label>
-                        <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
-                            <p style="font-size: 1.5rem;">สุดยอด!!!</p>
-                            <p class="m-0">ลองกดไลค์เช่น Instagram โดยแตะที่ส่วนความคิดเห็น</p>
-                            <hr class="my-2">
-                             <p class="m-0">Sama bisa format text seperti Whatsapp lohh... cobainn jugaaa, makaciwww bestieee</p> 
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="util.close()"></button>
-                        </div>
-                        <textarea class="form-control shadow-sm rounded-4" id="form-comment" rows="4" placeholder="Tulis Ucapan dan Doa"></textarea>
-                    </div>
-
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="comment.send(this)">
-                            <i class="fa-solid fa-paper-plane me-1"></i>Send
-                        </button>
-                    </div>
-                </div>
-
-                <div class="my-3 pt-3" id="comments" data-loading="false"></div>
-
-                <nav class="d-flex justify-content-center mb-0 pt-2">
-                    <ul class="pagination mb-0">
-                        <li class="page-item disabled" id="previous">
-                            <button class="page-link rounded-start-4" onclick="pagination.previous(this)">
-                                <i class="fa-solid fa-circle-left me-1"></i>Prev
-                            </button>
-                        </li>
-                        <li class="page-item disabled">
-                            <span class="page-link text-light" id="page">1</span>
-                        </li>
-                        <li class="page-item" id="next">
-                            <button class="page-link rounded-end-4" onclick="pagination.next(this)">
-                                Next<i class="fa-solid fa-circle-right ms-1"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section> -->
+       
 
         <!-- Wave Separator -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
@@ -593,9 +522,14 @@
         </div>
     </footer>
 
-    <!-- Welcome Page -->
-    <div class="loading-page bg-black" id="welcome" style="opacity: 1;">
 
+  
+
+
+    <!-- Welcome Page -->
+      <!-- <div class="loading-page bg-black" id="welcome" style="opacity: 1;"> -->
+    <div class="loading-page " id="welcome" style="opacity: 0.0025;">
+       
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
             <div class="text-center">
                 <h2 class="font-esthetic mb-4" style="font-size: 2.5rem;">The Wedding Of</h2>
@@ -607,7 +541,7 @@
                 <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Sasitorn &amp; Ratchanon</h2>
                 <div id="guest-name" data-message="Kepada Yth Bapak/Ibu/Saudara/i"></div>
 
-                <button type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="util.open(this)">
+                <button id="btn_open" type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="util.open(this)">
                     <i class="fa-solid fa-envelope-open me-2"></i>Open Invitation
                 </button>
             </div>
@@ -615,9 +549,9 @@
     </div>
 
     <!-- Theme Button -->
-    <button type="button" id="button-theme" style="display: none;" class="btn bg-dark border border-2 btn-sm rounded-circle btn-theme" onclick="theme.change()">
+    <!-- <button type="button" id="button-theme" style="display: none;" class="btn bg-dark border border-2 btn-sm rounded-circle btn-theme" onclick="theme.change()">
         <i class="fa-solid fa-circle-half-stroke"></i>
-    </button>
+    </button> -->
 
     <!-- Audio Button -->
     <button type="button" id="button-music" style="display: none;" class="btn bg-dark border border-2 btn-sm rounded-circle btn-music" onclick="audio.button(this)" data-status="true" data-url="./assets/music/fellow fellow - ไม่เปลี่ยนเลย (Best Luck).mp3">
